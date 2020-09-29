@@ -4,18 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ANNE SWEET</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link as="font" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header header">
     <!-- Шапка сайта -->
-    <section class="header__section header">
+    <section class="header__section">
         <div class="header__wrapper">
             <a class="header__logo" href="#">
-                <img class="header__logo-image" src="#" width="130" height="83" alt="Логотип личного блога Анны">
+                <img src="img/logo.svg" width="130" height="83" alt="Логотип личного блога Анны">
             </a>
             <nav class="header__navigation menu">
-                <ul class="menu__list">
-                    <li class="menu__item menu__item--active">Статьи</li>
+                <ul class="menu__list index-lists">
+                    <li class="menu__item">Статьи</li>
                     <li class="menu__item">Обо мне</li>
                     <li class="menu__item">Портфолио</li>
                     <li class="menu__item">Написать мне</li>
@@ -24,7 +27,7 @@
         </div>
     </section>
 </header>
-<main>
+<main class="index-main">
     <!-- Основное содержимое страницы -->
     <h1 class="visually-hidden">Личный блог - Анны</h1>
     <article class="my-notes">
@@ -32,7 +35,7 @@
         <div class="my-notes__controls">
             <label for="my-notes-selection">Все статьи</label>
             <select id="my-notes-selection" class="my-notes__select" name="my-notes-select">
-                <option disabled>Выбрать тему</option>
+                <option disabled selected>Выбрать тему</option>
                 <option value="Путешествия">Путешествия</option>
                 <option value="Город">Город</option>
                 <option value="Книги">Книги</option>
@@ -42,7 +45,7 @@
             </select>
         </div>
         <section class="my-notes__mini-articles mini-articles">
-            <ul class="mini-articles__list">
+            <ul class="mini-articles__list index-lists">
                 <li class="mini-articles__item">
                     <img src="#" alt="иллюстрация к статье" width="387" height="268">
                     <h3>Путешествие в Берлин в августе</h3>
@@ -73,7 +76,7 @@
             </ul>
         </section>
         <section class="my-notes__big-articles big-articles">
-            <ul class="big-articles__list">
+            <ul class="big-articles__list index-lists">
                 <li class="big-articles__item">
                     <h3>Снимки на плёнку</h3>
                     <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
@@ -130,7 +133,7 @@
 
     <section class="my-portfolio">
         <h2>Портфолио</h2>
-        <ul class="my-portfolio__list">
+        <ul class="my-portfolio__list index-lists">
             <li class="my-portfolio__item">
                 <h3>Блог HTML Academy</h3>
                 <h4>"Как учиться продуктивно"</h4>
@@ -151,8 +154,8 @@
                 </p>
             </li>
             <li class="my-portfolio__item">
-                <h3>Советы по эффективной удалённой работе</h3>
-                <h4>"Как учиться продуктивно"</h4>
+                <h3>Журнал "Т - Л"</h3>
+                <h4>"Советы по эффективной удалённой работе"</h4>
                 <p>
                     Поделилась лайфхаками, которые помогают
                     мне работать продуктивно из дома.
@@ -167,11 +170,11 @@
         <form action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="feedback__name-wrapper">
                 <label for="feedback-name">Ваше имя</label>
-                <input class="feedback__name-input" type="text" name="Ваше имя" id="feedback-name">
+                <input class="feedback__name-input" type="text" name="Ваше имя" id="feedback-name" placeholder="Иван Иванов">
             </div>
             <div class="feedback__email-wrapper">
                 <label for="feedback-email">Email</label>
-                <input class="feedback__email-input" type="email" name="Ваш e-mail" id="feedback-email">
+                <input class="feedback__email-input" type="email" name="Ваш e-mail" id="feedback-email" placeholder="google@gmail.com">
             </div>
             <div class="feedback__textarea-wrapper">
                 <label for="feedback-textarea">Сообщение</label>
@@ -185,30 +188,28 @@
 </main>
 <footer class="footer">
     <!-- Подвал сайта -->
-    <div class="footer__wrapper">
-        <ul class="footer__social-list">
-            <li class="footer__social-item">
-                <p>
-                    ВК
-                </p>
-            </li>
-            <li class="footer__social-item">
-                <p>
-                    Телеграм
-                </p>
-            </li>
-            <li class="footer__social-item">
-                <p>
-                    Инстаграм
-                </p>
-            </li>
-            <li class="footer__social-item">
-                <p>
-                    Твиттер
-                </p>
-            </li>
-        </ul>
-    </div>
+    <ul class="footer__social-list index-lists">
+        <li class="footer__social-item">
+            <p>
+                ВК
+            </p>
+        </li>
+        <li class="footer__social-item">
+            <p>
+                Телеграм
+            </p>
+        </li>
+        <li class="footer__social-item">
+            <p>
+                Инстаграм
+            </p>
+        </li>
+        <li class="footer__social-item">
+            <p>
+                Твиттер
+            </p>
+        </li>
+    </ul>
 </footer>
 </body>
 </html>

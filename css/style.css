@@ -1,0 +1,121 @@
+/* Глобальные стили */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+    margin: 0;
+    appearance: none;
+}
+
+address {
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Spectral SC', serif;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+:root {
+    --basic-text-clr: #2E2F22;
+    --inversion-text-clr: #FFFFFF;
+    --another-text-clr: #202117;
+    --footer-bg-clr: #D7D1C9;
+}
+
+/* Общие стили */
+.index-lists {
+    list-style: none;
+}
+/* Стили главной страницы */
+
+/* Шапка */
+.header {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header__section {
+    width: 100%;
+    background-image: url(../img/index-header-bg.png);
+}
+
+.header__wrapper {
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+}
+.header__navigation {
+    width: 610px;
+    margin-top: 33px;
+    margin-bottom: 523px;
+}
+.menu {}
+.menu__list {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* мэйн */
+.index-main {
+    width: 1440px;
+    margin: 0 auto;
+}
+/* футер */
+.footer {
+    width: 100%;
+    padding-top: 65px;
+    padding-bottom: 91px;
+    background-color: var(--footer-bg-clr);
+}
+
+.footer__social-list {
+    width: 631px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Стили страницы со статьёй */
